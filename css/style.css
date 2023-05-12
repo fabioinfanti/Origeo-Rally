@@ -1,0 +1,1163 @@
+@font-face {
+  font-family: Formula1;
+  src: url(/fonts/Formula1-Regular_web_0.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Formula1;
+  src: url(/fonts/Formula1-Bold_web_0.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(/fonts/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Formula1';
+}
+
+/* LOGIN */
+
+.login {
+    background-image: url(/imgs/bg__login-100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.login__logo {
+    max-width: 100%;
+    margin: 0 auto 40px;
+}
+
+input[type=text] {
+    font-family: 'Formula1';
+    font-weight: 600;
+    color: #AEAEAE;
+    padding: 6px 16px;
+    border: 1px solid #949493;
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+input::placeholder {
+    color: #AEAEAE;
+}
+
+.login__btn {
+    margin: 12px auto 0;
+    display: block;
+    padding: 6px 32px;
+    background-color: #003D5C;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Formula1';
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+@media (max-width: 767px) {
+    .login {
+        padding: 0 24px;
+    }
+
+    input[type=text] {
+        width: 80%;
+    }
+    .login__btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    .login {
+        padding: 0 24px;
+    }
+    input[type=text] {
+        width: 100%;
+    }
+    .login__btn {
+        width: 100%;
+    }
+}
+
+
+
+/* HOME */
+
+img {
+    max-width: 100%;
+}
+
+.home {
+    background-image: url(/imgs/bg-home-100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.nav-desk {
+    background-color: rgba(243, 243, 243, 0.7);
+    padding: 24px 40px;
+    position: relative;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav__logo {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.nav__flex {
+    display: inline-flex;
+    align-items: center;
+    border-top: 1px solid #003D5C;
+    border-bottom: 1px solid #003D5C;
+    padding: 12px 12px 12px 0;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.nav__link img {
+    width: 32px;
+}
+
+.nav__link a {
+    color: #003D5C;
+    font-family: 'Formula1';
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 8px;
+    line-height: 1;
+    font-size: 12px;
+}
+
+.nav__mobile {
+    display: none;
+}
+
+/* MENU HAMBURGUER */
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #003D5C;
+    margin: 7px 0;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.overlay {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background-color: white;
+    overflow-y: hidden;
+    transition: 0.5s;
+    overscroll-behavior: contain;
+    right: 0; bottom: 0;
+    display: flex;
+    justify-items: center;
+
+}
+
+.overlay-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #003D5C;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #07618f;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.desk {
+    display: block;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .nav__logo {
+        width: 70%;
+    }
+    .nav__flex {
+        padding: 12px 6px 12px 0;
+    }
+    .nav__link a {
+        font-size: 11px;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .nav__flex {
+        display: none;
+    }
+    .nav__mobile {
+        display: block;
+        float: right;
+    }
+    
+    .overlay .closebtn {
+        top: -10px;
+    }
+  
+}
+
+@media (max-width: 767px) {
+    .home{
+        background-position-x: -140px;
+    }
+    .nav-desk {
+        display: none;
+    }
+
+    .col-8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-mobile {
+        display: block;
+        padding: 24px 40px;
+        position: relative;
+    }
+
+    .nav__mobile {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 12px 0;
+        border-radius: 60px;
+    }
+
+    .nome-pagina {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 0 24px 0 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .nav__link p {
+        color: #003D5C;
+        font-family: 'Formula1';
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0 0 0 8px;
+        line-height: 1;
+        font-size: 22px;
+    }
+
+    .overlay {
+        background-image: url(/imgs/overlay-mobile-100.jpg);
+        background-color: transparent;
+        background-position-y: -220px;
+    }
+
+    .overlay-content {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .nav__li {
+        margin: auto;
+        padding: 48px;
+    }
+
+    .nav__li-center {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .nav__link a {
+        font-size: 18px;
+    }
+
+    .nav__logo {
+        width: 250px;
+        margin: 0 auto 64px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home{
+        background-position: center;
+        background-image: url(/imgs/bg-mobile-100.jpg);
+    }
+}
+
+@media (max-width: 425px) {
+    .nav-mobile {
+        display: block;
+        padding: 24px 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    .nav__mobile {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 13px 0;
+        border-radius: 60px;
+    }
+
+    .nome-pagina {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 0 24px 0 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .nav__link a {
+        color: #003D5C;
+        font-family: 'Formula1';
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 0 0 8px;
+        line-height: 1;
+        font-size: 16px;
+    }
+    
+    .nome-pagina {
+        padding: 8px;
+    }
+
+    .nav__link p {
+        font-size: 18px;
+    }
+    
+    .nav__logo {
+        width: 200px;
+        margin: 40px auto 64px;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: -10px;
+        right: 12px;
+        font-size: 60px;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 32px;
+        height: 4px;
+        margin: 6px 0;
+    }
+
+    .nav__li {
+        padding: 24px;
+    }
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+
+/* TRANSPORTE */
+
+.paginas {
+    background-image: url(/imgs/bg-paginas-100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-desk2 {
+    padding: 24px 40px;
+    position: relative;
+}
+
+.page-content {
+    margin-top: 24px;
+}
+
+.page-logo {
+    display: block;
+    margin: auto;
+}
+
+.page-box {
+    background-color: #ffffffb3;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.flex-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.transport-card {
+    margin: 0 24px 40px;
+    text-align: center;
+    font-family: 'Formula1';
+    font-weight: 400;
+    font-size: 22px;
+    color: #003D5C;
+    width: 40%;
+}
+
+.card-box {
+    padding: 12px 24px;
+    border-radius: 0 24px 0 24px;
+    background-color: #E9EBED;
+}
+
+.box-line {
+    height: 2px;
+    width: 90%;
+    margin: 32px auto;
+    display: block;
+    background-color: #003D5C;
+}
+
+.box-title {
+    font-size: 26px;
+    font-family: 'Formula1';
+    font-weight: 400;
+    color: #003D5C;
+    text-align: center;
+}
+
+.box-text {
+    text-align: center;
+    color: #003D5C;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Formula1';
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .nav-desk2 {
+        display: none;
+    }
+
+    .page-logo {
+        height: 140px;
+    }
+
+    .flex-horizontal {
+        display: block;
+    }
+
+    .transport-card {
+        width: 100%;
+        margin: 24px auto;
+    }
+    .page-box {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-name {
+        font-size: 18px;
+    }
+
+    .box-text {
+        font-size: 14px;
+    }
+}
+
+
+/* HOTEL */
+
+.hotel-box {
+    background-color: #ffffffb3;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hotel-img {
+    width: 45%;
+}
+
+.box-content {
+    padding: 0 40px
+}
+
+.hotel-title {
+    color: #003D5C;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hotel-text {
+    font-size: 14px;
+    color: #003D5C;
+    margin: 12px 0;
+}
+
+.flex-horizontal2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.localizacao-text {
+    font-size: 12px;
+    color: #003D5C;
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+
+.hotel-btn {
+    background-color: #BD6C18;
+    padding: 12px 24px;
+    display: flex;
+    margin-left: 24px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.hotel-btn span {
+    color: white;
+    margin-right: 12px;
+}
+
+.hotel-btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .hotel-text {
+        font-size: 12px;
+    }
+
+    .localizacao-text {
+        font-size: 11px;
+    }
+    .w-50 {
+        width: 46% !important;
+    }
+    .hotel-btn span {
+        margin-right: 8px;
+    }
+    .flex-horizontal {
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .hotel-box {
+        display: block;
+        padding: 1px 0;
+        margin: 40px auto;
+    }
+    .hotel-img {
+        width: 100%;
+    }
+    .mobile {
+        display: block;
+    }
+    .desk2 {
+        display: none;
+    }
+    .hotel-title {
+        text-align: center;
+        margin: 24px auto;
+    }
+    .box-content {
+        margin: 32px 0;
+    }
+    .flex-horizontal2 {
+        display: block;
+    }
+    .flex{
+        justify-content: center;
+        margin: 24px auto;
+    }
+    .w-50 {
+        width: 100% !important;
+    }
+    .hotel-btn {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .hotel-title {
+        font-size: 18px;
+    }
+}
+
+
+/* ATIVIDADE */
+
+.atividade-card {
+    margin: 40px auto 40px;
+    font-family: 'Formula1';
+    font-weight: 400;
+    font-size: 22px;
+    color: #003D5C;
+    width: 45%;
+}
+
+.atividade-box {
+    padding: 24px;
+    border-radius: 0 72px 0 72px;
+    background-color: #E9EBED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atividade-img {
+    background-color: white;
+    border-radius: 0 32px 0 32px;
+    padding: 12px;
+    width: 25%;
+    height: auto;
+}
+
+.atividade-titulo {
+    font-size: 18px;
+    color: #003D5C;
+    margin: 0;
+}
+
+.w-80 {
+    width: 75%;
+    margin-left: 18px;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px dashed #003D5C;
+    margin: 8px 0
+}
+
+.atividade-text {
+    font-size: 14px;
+}
+
+@media (max-width: 991px) {
+    .flex-horizontal {
+        display: block;
+    }
+    .atividade-card {
+        width: 100%;
+        margin: 40px 0;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .page-content {
+        padding: 0 24px;
+    }
+    .atividade-text {
+        font-size: 10px;
+    }
+    .atividade-titulo {
+        font-size: 16px;
+    }
+    .atividade-img {
+        width: 30%;
+    }
+}
+
+
+/* GALERIA */
+
+.galeria-card {
+    margin: 0 12px;
+    display: block;
+    width: 25%;
+}
+
+.galeria-card:hover {
+    text-decoration: none;
+}
+
+.galeria-img {
+    width: 100%;
+}
+
+.galeria-btn {
+    margin: 12px 0 0;
+    display: flex;
+    color: #003D5C;
+    text-decoration: none;
+    align-items: center;
+}
+
+.galeria-btn span {
+    font-size: 13px;
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+
+.flex-horizontal3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .flex-horizontal3 {
+        display: block;
+    }
+    .galeria-card {
+        width: 100%;
+        margin: 0 0 24px;
+    }    
+}
+
+
+
+/* PESQUISA */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.block {
+    display: block;
+}
+
+.pesquisa-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #003D5C;
+}
+
+.pesquisa-title span {
+    color: #BD6C18;
+}
+
+input[type=radio] {
+    cursor: pointer;
+}
+
+.pesquisa-btn {
+    background-color: #BD6C18;
+    padding: 12px 24px;
+    color: white;
+    text-align: center;
+    border: none;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.pesquisa-btn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* PERGUNTAS */
+
+textarea {
+    width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perguntas-btn {
+    background-color: #BD6C18;
+    padding: 12px 48px;
+    color: white;
+    text-align: center;
+    border: none;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.perguntas-card {
+    background-color: white;
+    padding: 24px;
+    margin: 40px auto 0;
+}
+
+.pergunta-text {
+    margin: 0;
+    color: #003D5C;
+    font-size: 14px;
+}
+
+.data, .nome {
+    font-size: 12px;
+}
+
+.mg-0 {
+    margin: 0;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .perguntas-card {
+        margin: 24px auto 0;
+    }
+
+    .grid2 {
+        grid-template-columns: 1fr;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+}
+
+
+
+/* COMPARTILHE */
+
+.compartilhe-form {
+    margin: 40px auto;
+}
+
+.AjInput label {
+    font-size: 22px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 32px;
+    margin: 8px 24px 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-weight: 400;
+    border-radius: 0 32px 0 32px;
+}
+
+#picture__input {
+    display: none;
+}
+
+.picture {
+    width: 80%;
+    height: 56px;
+    margin: 24px auto 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0 32px 0 32px;
+    transition: border 300ms ease-in-out;
+    overflow: hidden;
+    background-color: #EEEEEE;
+}
+
+.picture__icon {
+    margin-right: 12px;
+}
+
+.picture__img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    object-fit: cover;
+    font-family: 'Formula1';
+    color: #003D5C;
+}
+
+.compartilhe-btn {
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: #BD6C18;
+    color: white;
+    cursor: pointer;
+}
+
+button img {
+    display: block;
+    margin: 0 0 0 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.postContent {
+    display: flex;
+    background-color: #E9E9E9;
+    margin-bottom: 40px;
+}
+
+.postInfo {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.postName {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 0;
+}
+
+.postData {
+    font-size: 18px;
+    color: #727272;
+}
+
+.postText {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: 'Lato';
+    color: #606060;
+}
+
+.postImage {
+    width: 50%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.postLike {
+    display: flex;
+    align-items: center;
+    margin: 24px 0 0;
+    cursor: pointer;
+}
+
+.postLike p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+@media (max-width: 991px) {
+    .postContent {
+        display: block;
+    }
+    .postImage {
+        width: 100%;
+    }    
+}
+
+@media (max-width: 450px) {
+    .postInfo {
+        padding: 24;
+    }
+    .postText {
+        font-size: 16px;
+    }
+    .postLike p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* AGENDA */
+
+.agenda-box {
+    background-color: #ffffffb3;
+    padding: 12px;
+    border-radius: 0 24px 0 24px;
+}
+
+.agenda-dias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterDiv {
+    margin: 2px;
+    display: none;
+}
+  
+.show {
+    display: block;
+}
+  
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+  
+/* Style the buttons */
+.agenda-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #003D5C;
+    background-color: transparent;
+    padding: 0 21px;
+    margin: 0 auto;
+    border-right: 2px solid #003D5C;
+    font-size: 16px;
+}
+
+.agenda-btn2 {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #003D5C;
+    background-color: transparent;
+    padding: 0 24px;
+}
+  
+.agenda-btn:hover {
+    color: #BD6C18;
+}
+  
+.agenda-btn.active {
+    color: #BD6C18;
+}
+
+.agenda-card {
+    margin: 0 auto;
+    font-family: 'Formula1';
+    font-weight: 400;
+    font-size: 22px;
+    color: #003D5C;
+}
+
+.agenda-box {
+    padding: 24px;
+    border-radius: 0 48px 0 48px;
+    background-color: #E9EBED;
+    display: flex;
+    align-items: center;
+}
+
+.agenda-img {
+    background-color: white;
+    border-radius: 0 32px 0 32px;
+    padding: 12px;
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.no-border {
+    border: none;
+}
+
+.agenda-titulo {
+    font-size: 18px;
+    color: #003D5C;
+    margin: 0;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px dashed #003D5C;
+    margin: 8px 0
+}
+
+.agenda-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.agenda-horario {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.agenda-line {
+    border-bottom: 2px dashed #BD6C18;
+    margin: 4px 0;
+}
