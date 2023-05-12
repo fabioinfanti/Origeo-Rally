@@ -1,18 +1,18 @@
 @font-face {
   font-family: Formula1;
-  src: url(/fonts/Formula1-Regular_web_0.ttf);
+  src: url(../fonts/Formula1-Regular_web_0.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: Formula1;
-  src: url(/fonts/Formula1-Bold_web_0.ttf);
+  src: url(../fonts/Formula1-Bold_web_0.ttf);
   font-weight: 600;
 }
 
 @font-face {
     font-family: Lato;
-    src: url(/fonts/Lato-Regular.ttf);
+    src: url(../fonts/Lato-Regular.ttf);
     font-weight: 400;
 }
 
@@ -23,7 +23,7 @@ body {
 /* LOGIN */
 
 .login {
-    background-image: url(/imgs/bg__login-100.jpg);
+    background-image: url(../imgs/bg__login-100.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -100,7 +100,7 @@ img {
 }
 
 .home {
-    background-image: url(/imgs/bg-home-100.jpg);
+    background-image: url(../imgs/bg-home-100.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -291,7 +291,7 @@ img {
     }
 
     .overlay {
-        background-image: url(/imgs/overlay-mobile-100.jpg);
+        background-image: url(../imgs/overlay-mobile-100.jpg);
         background-color: transparent;
         background-position-y: -220px;
     }
@@ -324,7 +324,7 @@ img {
 @media (max-width: 600px) {
     .home{
         background-position: center;
-        background-image: url(/imgs/bg-mobile-100.jpg);
+        background-image: url(../imgs/bg-mobile-100.jpg);
     }
 }
 
@@ -407,7 +407,7 @@ img {
 /* TRANSPORTE */
 
 .paginas {
-    background-image: url(/imgs/bg-paginas-100.jpg);
+    background-image: url(../imgs/bg-paginas-100.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
